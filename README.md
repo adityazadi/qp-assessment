@@ -1,2 +1,2 @@
 # qp-assessment
-API project for grocery system
+API project for grocery system. This also includes postman collection.
