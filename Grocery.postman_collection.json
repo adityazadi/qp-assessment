@@ -33,7 +33,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"Mango\",\r\n    \"price\": 5.99,\r\n    \"inventory\": 55\r\n}",
+					"raw": "{\r\n    \"name\": \"Apple\",\r\n    \"price\": 4.99,\r\n    \"inventory\": 40\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -63,7 +63,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"Apple\",\r\n    \"price\": 5.99\r\n}",
+					"raw": "{\r\n    \"name\": \"Apple\",\r\n    \"price\": 6.99\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -124,7 +124,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/api/admin/grocery-items/{{id}}/manage-inventory",
+					"raw": "http://localhost:8080/api/admin/grocery-items/2/manage-inventory?quantity=10",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -134,8 +134,14 @@
 						"api",
 						"admin",
 						"grocery-items",
-						"{{id}}",
+						"2",
 						"manage-inventory"
+					],
+					"query": [
+						{
+							"key": "quantity",
+							"value": "10"
+						}
 					]
 				}
 			},
@@ -169,7 +175,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "[1]",
+					"raw": "[2]",
 					"options": {
 						"raw": {
 							"language": "json"
